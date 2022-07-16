@@ -1,0 +1,14 @@
+.translator {
+  background-color: red;
+  padding: 20px;
+  max-width: 300px;
+  &__translate-box {
+    background-color: blue;
+  }
+}
+.translate-box {
+  &__heading {
+    background-color: green;
+    text-align: center;
+  }
+}
