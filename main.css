@@ -1,12 +1,47 @@
+body {
+  background-color: #637593;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
 .translator {
+  background-color: #637593;
+  padding: 20px;
+}
+.translator__picture {
+  margin: 10px auto;
+  display: block;
+}
+@media only screen and (min-width: 701px) {
+  .translator__picture {
+    height: 400px;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .translator__picture {
+    height: 200px;
+    width: 300px;
+  }
+}
+.translator .translator {
   background-color: yellow;
   padding: 20px;
 }
-.translator__translate-box {
-  background-color: blue;
+.translator .translator__translate-box {
+  color: white;
 }
-
-.translate-box__heading {
-  background-color: green;
+.translator .translate-box__heading {
   text-align: center;
+}
+.translator .translate-box__translate-box {
+  width: 100%;
+  height: 150px;
+}
+.translator .translate-box__button {
+  margin: 10px auto;
+  display: block;
 }
