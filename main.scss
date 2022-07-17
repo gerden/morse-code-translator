@@ -1,4 +1,5 @@
 @use "_style";
+
 body {
   background-color: style.$pageBackgroundColor;
 }
@@ -29,23 +30,29 @@ h1 {
     display: block;
   }
 
-  &__translate-box {
-    // background-color: blue;
-    color: style.$baseTextColor;
-  }
-}
-.translate-box {
-  &__heading {
-    // background-color: green;
-    text-align: center;
-  }
+  .translator {
+    background-color: yellow;
+    padding: 20px;
+    // max-width: 300px;
 
-  &__translate-box {
-    width: 100%;
-    height: style.$textBoxHeight;
+    &__translate-box {
+      // background-color: blue;
+      color: style.$baseTextColor;
+    }
   }
-  &__button {
-    margin: 10px auto;
-    display: block;
+  .translate-box {
+    &__heading {
+      // background-color: green;
+      text-align: center;
+    }
+
+    &__translate-box {
+      width: 100%;
+      height: style.$textBoxHeight;
+    }
+    &__button {
+      margin: 10px auto;
+      display: block;
+    }
   }
 }
