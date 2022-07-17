@@ -1,7 +1,6 @@
 .translator {
-  background-color: red;
+  background-color: yellow;
   padding: 20px;
-  max-width: 300px;
 }
 .translator__translate-box {
   background-color: blue;
