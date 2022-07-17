@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="styleSheet" href="./main.css" />
+    <script src="./main.js" defer></script>
     <title>Morse Code Translator</title>
   </head>
   <body>
@@ -12,16 +13,20 @@
       <h1>Morse Code Translator</h1>
     </header>
     <main class="translator">
+      <img class="translator__picture" src="morsecode-1.webp" />
       <div class="translator__translate-box">
-        <h2 class="translate-box__heading">Text To Morse Code</h2>
-        <textarea id="textToMorse" rows="3" cols="30"></textarea>
-        <p class="output" id="textToMorseOutput"></p>
-      </div>
-
-      <div class="translator__translate-box">
-        <h2 class="translate-box__heading">Morse Code to Text</h2>
-        <textarea id="morseToText" rows="3" cols="30"></textarea>
-        <p class="output" id="morseToTextOutput"></p>
+        <h2 class="translate-box__heading">English To Morse Code</h2>
+        <input
+          class="translate-box__translate-box"
+          id="textTextarea"
+        ></input>
+        <button class="translate-box__button" id="changeToMorse">English to Morse Code</button>
+        <h2 class="translate-box__heading">Morse Code to English</h2>
+        <textarea
+          class="translate-box__translate-box"
+          id="morseTextarea"
+        ></textarea>
+        <button class="translate-box__button" id="changeToText">Morse Code to English</button>
       </div>
     </main>
   </body>

@@ -1,14 +1,51 @@
+@use "_style";
+body {
+  background-color: style.$pageBackgroundColor;
+}
+h1 {
+  color: style.$baseTextColor;
+  text-align: center;
+}
+
+@mixin size-modifier() {
+  @media only screen and (min-width: ( style.$changePicturewidth + 1)) {
+    height: 400px;
+    width: 600px;
+  }
+
+  @media only screen and (max-width: style.$changePicturewidth) {
+    height: 200px;
+    width: 300px;
+  }
+}
+
 .translator {
-  background-color: red;
+  background-color: style.$pageBackgroundColor;
   padding: 20px;
-  max-width: 300px;
+  // max-width: 300px;
+  &__picture {
+    @include size-modifier();
+    margin: 10px auto;
+    display: block;
+  }
+
   &__translate-box {
-    background-color: blue;
+    // background-color: blue;
+    color: style.$baseTextColor;
   }
 }
 .translate-box {
   &__heading {
-    background-color: green;
+    // background-color: green;
     text-align: center;
+  }
+
+  &__translate-box {
+    width: 100%;
+    height: style.$textBoxHeight;
+  }
+  &__button {
+    margin: 10px auto;
+    display: block;
   }
 }
